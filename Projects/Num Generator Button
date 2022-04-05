@@ -1,0 +1,15 @@
+import tkinter
+import random 
+
+click = random.randint(1, 10)
+
+def click():
+    click = random.randint(1, 10)
+    print(click)
+
+window = tkinter.Tk()
+button = tkinter.Button(window, text = "Generate 1-10")
+button.config(command=click)
+button.pack()
+window.mainloop()
+
